@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #393c40ed;
+            overflow-x:hidden;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            transition: transform 0.3s, font-weight 0.3s;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            transform: rotate(5deg);
+        }
+
+        .custom{
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .custom:hover{
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+        .navbar-brand:hover span {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section {
+            background-image: url(Banner.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            opacity: 0.8;
+        }
+
+        .featured-section {
+            padding: 50px 0;
+        }
+
+        .about-section {
+            background-image: url(bgabout.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding: 50px 0;
+        }
+
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .progress-bar {
+            transition: transform 0.3s;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .progress-bar {
+            position: relative;
+            z-index: 1;
+        }
+
+        .progress-bar:hover span {
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+    <title>Fayyaz Ahmad - Portfolio</title>
+    <link rel="icon" href="logo.png" sizes="192x192">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home"><img src="logo.png" alt="Logo" class="me-2" style="width:37px; height:37px;"><span>Fayyaz Ahmad</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section text-center text-light bg-dark">
+        <div class="container">
+            <h1 class="display-4 mt-5">Welcome to My Portfolio</h1>
+            <p class="lead">Showcasing my awesome work and skills</p>
+        </div>
+    </section>
+
+    <section id="skills" class="featured-section">
+        <div class="container">
+            <h2 class="text-center text-light mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="me-1 bi bi-person-gear text-light" viewBox="0 0 16 16">
+                    <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0M8 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m.256 7a4.474 4.474 0 0 1-.229-1.004H3c.001-.246.154-.986.832-1.664C4.484 10.68 5.711 10 8 10c.26 0 .507.009.74.025.226-.341.496-.65.804-.918C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4s1 1 1 1zm3.63-4.54c.18-.613 1.048-.613 1.229 0l.043.148a.64.64 0 0 0 .921.382l.136-.074c.561-.306 1.175.308.87.869l-.075.136a.64.64 0 0 0 .382.92l.149.045c.612.18.612 1.048 0 1.229l-.15.043a.64.64 0 0 0-.38.921l.074.136c.305.561-.309 1.175-.87.87l-.136-.075a.64.64 0 0 0-.92.382l-.045.149c-.18.612-1.048.612-1.229 0l-.043-.15a.64.64 0 0 0-.921-.38l-.136.074c-.561.305-1.175-.309-.87-.87l.075-.136a.64.64 0 0 0-.382-.92l-.148-.045c-.613-.18-.613-1.048 0-1.229l.148-.043a.64.64 0 0 0 .382-.921l-.074-.136c-.306-.561.308-1.175.869-.87l.136.075a.64.64 0 0 0 .92-.382l.045-.148ZM14 12.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0"/>
+                </svg>
+                My Skills
+            </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="progress-bar-container">
+                        <div class="progress-bar rounded" style="width: 80%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"><span>Oracle EBS</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 90%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"><span>Oracle Fusion Cloud</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 85%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"><span>Data Analytics</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 75%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span>Technical Lead</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 70%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span>Project Management</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 59%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="59" aria-valuemin="0" aria-valuemax="100"><span>Data Science</span></div>
+                        </div>
+                    </div>
+
+                    <div class="progress-bar-container mt-3">
+                        <div class="progress-bar rounded" style="width: 83%;">
+                            <div class="progress-bar bg-success" role="progressbar" aria-valuenow="83" aria-valuemin="0" aria-valuemax="100"><span>Database</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="container">
+                        <img src="skills.png" class="img-fluid ms-5 mt-4" style="width:400px;">
+                    </div>
+                </div>
+            </div>
+    </section> 
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="text-center text-light mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-light me-1 bi bi-person-vcard-fill" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm9 1.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4a.5.5 0 0 0-.5.5M9 8a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 0-1h-4A.5.5 0 0 0 9 8m1 2.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 0-1h-3a.5.5 0 0 0-.5.5m-1 2C9 10.567 7.21 9 5 9c-2.086 0-3.8 1.398-3.984 3.181A1 1 0 0 0 2 13h6.96c.026-.163.04-.33.04-.5M7 6a2 2 0 1 0-4 0 2 2 0 0 0 4 0"/>
+                </svg>
+                About Me
+            </h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="container">
+                        <img src="img.png" class="img-fluid rounded custom mt-4">
+                    </div>
+                </div>
+                <div class="ms-5 col-md-6 text-light text-center">
+                    <div class="container">
+                        <p class="text-bold">ITIL V3®, OIC®, SCRUM, OCA® certified Oracle Technology expert that my career emerged from Oracle database
+                            development to Integration development with a track record of delivering high-performing, scalable, highly available, userfriendly solutions. Key strengths include: engaging with stakeholders to scope complex requirements, ensuring that IT
+                            solutions have positive ROI; ability to work with huge palette of technologies including OIC, OBIEE, Web Services, Data
+                            Migration, APIs; applying functional (EBS, fusion) and technical expertise from Oracle stack to ensure that solutions are bestin-class; combining leadership with performance management to achieve “on time, on scope, on budget” delivery; and
+                            harnessing strong business awareness to ensure IT solutions integrate seamlessly with the operational environment. I
+                            possess over 16 years of diverse experience in Oracle tools & technologies.
+                            Having a nice blend of Oracle Technologies which empower me to uncover database issues and provide solutions using
+                            contemporary tools and technologies like Oracle Cloud Integration. Having multiple oracle certification starting from Oracle
+                            PL/SQL, Database Administration and Cloud certification as well.</p>
+                    </div>
+                </div>
+            </div>
+    </section> 
+
+    <section id="work" class="work-section mt-5 mb-5" style="overflow-x: wrap;">
+        <h2 class="text-center text-light mb-5">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="text-light me-1 bi bi-person-workspace" viewBox="0 0 16 16">
+                <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.373 5.373 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+              </svg>
+            Work Experience
+        </h2>
+        <div class="row mt-3">
+            <div class="ms-5 col-md-6 text-light">
+                <div class="container">
+                    <ol>
+                        <li>
+                            <p class="fw-bold">Database Architect</p>
+                            <p>2006-2008</p>
+                        </li>
+                        <li>
+                            <p class="fw-bold">Senior Oracle Consultant</p>
+                            <p>2008-2012</p>
+                        </li>
+                        <li>
+                            <p class="fw-bold">Oracle Technical Track Lead</p>
+                            <p>2012-2019</p>
+                        </li>
+                        <li>
+                            <p class="fw-bold">Oracle Cloud Application Architect</p>
+                            <p>2020-2022</p>
+                        </li>
+                        <li>
+                            <p class="fw-bold">Oracle Cloud Integration Expert (OIC, PCS, VBCS)</p>
+                            <p>2022-2022</p>
+                        </li>
+                        <li>
+                            <p class="fw-bold">Oracle Technical Lead</p>
+                            <p>2022-Curent</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-4 " style="overflow-x: wrap;">
+                <div class="container">
+                    <img src="work.png" class="img-fluid rounded ms-5 mt-4" alt="Work Image">
+                </div>
+            </div>
+        </div>        
+    </section> 
+
+    <footer class="main-footer text-bg-dark py-5 small" style="overflow-x: auto;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                        <address class="small text-secondary">
+                            Dubai, <br>
+                            United Arab Emirates<br>
+                            00000 <br>
+                        </address>
+                        <p class="text-secondary small">
+                            Fayyaz Ahmad
+                        </p>
+                </div>
+                <div class="col-md-4">
+                    <h6>Main Menu</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#home" class="text-decoration-none text-secondary">Home</a></li>
+                        <li><a href="#about" class="text-decoration-none text-secondary">About</a></li>
+                        <li><a href="#skills" class="text-decoration-none text-secondary">Skills</a></li>
+                        <li><a href="#work" class="text-decoration-none text-secondary">Work Experience</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h6 id="#contact">Contact Me</h6>
+                    <a href="mailto:mr.fayyazahmad@hotmail.com" class="btn btn-sm btn-info rounded-pill me-2 px-md-3 d-inline-flex align-items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class=" me-2 text-light bi bi-envelope" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                        </svg>
+                        <span class="d-md-block d-none">mr.fayyazahmad@hotmail.com</span>
+                    </a>
+                    <a href="tel:971509650413" class="btn btn-sm btn-success rounded-pill px-md-3 d-inline-flex align-items-center mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="me-2 text-light bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        <span class="d-md-block d-none">(+971) 509650413</span>
+                    </a>
+                    <a href="#" class="btn btn-sm btn-danger rounded-pill px-md-3 d-inline-flex align-items-center mb-3 disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="text-light me-2 bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>
+                        <span class="d-md-block d-none">United Arab Emraites</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
